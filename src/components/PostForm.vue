@@ -1,14 +1,15 @@
 <template>
   <form @submit.prevent>
     <h1>Make Post Form</h1>
-    <my-input
-        v-model="post.title"
-        type="text"
-        placeholder="Name"/>
-    <my-input
-        v-model="post.body"
-        type="text"
-        placeholder="Description"/>
+        <my-input
+            v-model="post.title"
+            type="text"
+            placeholder="Name"/>
+        <my-input
+            v-model="post.body"
+            type="text"
+            placeholder="Description"/>
+
     <my-button class="button"
             @click="createPost"
     >
@@ -19,6 +20,7 @@
 
 <script>
 export default {
+  name: 'post-form',
   data() {
     return {
       post: {

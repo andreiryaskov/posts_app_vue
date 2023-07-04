@@ -5,7 +5,10 @@
       <div><strong>Description: </strong>{{ post.body }}</div>
     </div>
     <div class="post__btns">
-      <my-button style="margin-top: 0">
+      <my-button
+          style="margin-top: 0"
+          @click="$emit('remove', post)"
+      >
         delete
       </my-button>
     </div>
@@ -15,6 +18,7 @@
 
 <script>
 export default {
+  name: 'post-item',
   props: {
     post: {
       type: Object,
