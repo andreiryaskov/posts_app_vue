@@ -4,6 +4,7 @@ import PostItem from "@/components/PostItem.vue";
 import PostList from "@/components/PostList.vue";
 import MyDialog from "@/components/UI/MyDialog.vue";
 import PostForm from "@/components/PostForm.vue";
+import MySelect from "@/components/UI/MySelect.vue";
 
 export default [
     MyButton,
@@ -12,6 +13,7 @@ export default [
     PostList,
     MyDialog,
     PostForm,
+    MySelect,
 ]
 
 

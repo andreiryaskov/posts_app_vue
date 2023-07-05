@@ -1,10 +1,17 @@
 <template>
   <div class="post">
     <div>
+      <div>{{post.id}}</div>
       <div><strong>Name: </strong>{{ post.title }}</div>
       <div><strong>Description: </strong>{{ post.body }}</div>
     </div>
     <div class="post__btns">
+      <my-button
+          style="margin-top: 0"
+          @click="$router.push(`/posts/${post.id}`)"
+      >
+        open
+      </my-button>
       <my-button
           style="margin-top: 0"
           @click="$emit('remove', post)"
