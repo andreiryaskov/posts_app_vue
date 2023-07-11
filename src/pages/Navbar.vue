@@ -15,6 +15,12 @@
       >
         About
       </my-button>
+      <my-button
+          style="width: 100px;height: 30px; margin-left: 15px;"
+          @click="$router.push('/store')"
+      >
+        Store
+      </my-button>
     </div>
 
   </div>
